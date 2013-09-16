@@ -4,41 +4,30 @@
   "description": "Remote Monitoring and Control Panels for Node.js",
   "components": [
     {
-      "id": "c0",
-      "viewClass": "core.Probe",
+      "id": "c3",
+      "viewClass": "config.Config",
       "viewOptions": {
-        "title": "Probe Viewer",
+        "title": "Config Monitor",
         "background": true
       },
       "css": {
-        ".nm-cv": "top:10px; z-index:3; left:570px;",
-        ".nm-cv-viewport": "height:620px; width:410px;"
+        ".nm-cv": "top:10px; z-index:6; left:1014px;",
+        ".nm-cv-viewport": "height:500px; width:300px;"
       },
-      "monitor": {
-        "probeClass": "Config",
-        "hostName": "lorens-air.local",
-        "appName": "config-monitor",
-        "appInstance": "1"
-      }
+      "monitor": {}
     },
     {
-      "id": "c1",
-      "viewClass": "core.LogViewer",
+      "id": "c5",
+      "viewClass": "core.Inspector",
       "viewOptions": {
-        "title": "Log Viewer",
+        "title": "Object Inspector",
         "background": true
       },
       "css": {
-        ".nm-cv": "top:10px; z-index:4; left:0px;",
-        ".nm-cv-viewport": "height:620px; width:530px;"
+        ".nm-cv": "top:10px; z-index:7; left:0px;",
+        ".nm-cv-viewport": "height:400px; width:350px;"
       },
-      "monitor": {
-        "probeClass": "Log",
-        "initParams": {
-          "pattern": "{trace,debug,info,warn,error,fatal}.Router.*"
-        },
-        "appInstance": "1"
-      }
+      "monitor": {}
     }
   ]
 }
