@@ -1,0 +1,44 @@
+{
+  "id": "/index",
+  "title": "Home - Node Monitor",
+  "description": "Remote Monitoring and Control Panels for Node.js",
+  "components": [
+    {
+      "id": "c0",
+      "viewClass": "core.Probe",
+      "viewOptions": {
+        "title": "Probe Viewer",
+        "background": true
+      },
+      "css": {
+        ".nm-cv": "top:10px; z-index:3; left:570px;",
+        ".nm-cv-viewport": "height:620px; width:410px;"
+      },
+      "monitor": {
+        "probeClass": "Config",
+        "hostName": "lorens-air.local",
+        "appName": "config-monitor",
+        "appInstance": "1"
+      }
+    },
+    {
+      "id": "c1",
+      "viewClass": "core.LogViewer",
+      "viewOptions": {
+        "title": "Log Viewer",
+        "background": true
+      },
+      "css": {
+        ".nm-cv": "top:10px; z-index:4; left:0px;",
+        ".nm-cv-viewport": "height:620px; width:530px;"
+      },
+      "monitor": {
+        "probeClass": "Log",
+        "initParams": {
+          "pattern": "{trace,debug,info,warn,error,fatal}.Router.*"
+        },
+        "appInstance": "1"
+      }
+    }
+  ]
+}
