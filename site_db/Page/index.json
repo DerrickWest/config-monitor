@@ -11,7 +11,7 @@
         "background": true
       },
       "css": {
-        ".nm-cv": "top:10px; z-index:6; left:1014px;",
+        ".nm-cv": "top:10px; z-index:6; left:1346px;",
         ".nm-cv-viewport": "height:500px; width:300px;"
       },
       "monitor": {}
@@ -24,10 +24,34 @@
         "background": true
       },
       "css": {
-        ".nm-cv": "top:10px; z-index:7; left:0px;",
+        ".nm-cv": "top:10px; z-index:7; left:332px;",
         ".nm-cv-viewport": "height:400px; width:350px;"
       },
-      "monitor": {}
+      "monitor": {
+        "probeClass": "Inspect",
+        "initParams": {
+          "key": "window",
+          "depth": 1
+        }
+      }
+    },
+    {
+      "id": "c6",
+      "viewClass": "core.Probe",
+      "viewOptions": {
+        "title": "Probe Viewer",
+        "background": true
+      },
+      "css": {
+        ".nm-cv": "top:10px; z-index:8; left:0px;",
+        ".nm-cv-viewport": "height:620px; width:400px;"
+      },
+      "monitor": {
+        "probeClass": "Config",
+        "hostName": "Derrick.local",
+        "appName": "config-monitor",
+        "appInstance": "1"
+      }
     }
   ]
 }
