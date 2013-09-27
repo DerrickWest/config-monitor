@@ -1,0 +1,42 @@
+{
+  "id": "/View%20test",
+  "title": "View test",
+  "components": [
+    {
+      "id": "c0",
+      "viewClass": "core.Probe",
+      "viewOptions": {
+        "title": "Probe Viewer",
+        "background": true
+      },
+      "css": {
+        ".nm-cv": "top:0px; z-index:1; left:502px;",
+        ".nm-cv-viewport": "height:600px; width:450px;"
+      },
+      "monitor": {
+        "probeClass": "Config",
+        "hostName": "Derrick.local",
+        "appName": "config-monitor",
+        "appInstance": "1"
+      }
+    },
+    {
+      "id": "c1",
+      "viewClass": "config.Config",
+      "viewOptions": {
+        "title": "Config Monitor",
+        "background": true
+      },
+      "css": {
+        ".nm-cv": "top:0px; left:0px; z-index:2;",
+        ".nm-cv-viewport": "height:500px; width:300px;"
+      },
+      "monitor": {
+        "hostName": "Derrick.local",
+        "appName": "config-monitor",
+        "appInstance": "1",
+        "probeClass": "Config"
+      }
+    }
+  ]
+}

@@ -1,55 +1,20 @@
 {
   "id": "/index",
-  "title": "Home - Node Monitor",
-  "description": "Remote Monitoring and Control Panels for Node.js",
+  "title": "index",
   "components": [
     {
-      "id": "c3",
+      "id": "c0",
       "viewClass": "config.Config",
       "viewOptions": {
         "title": "Config Monitor",
         "background": true
       },
       "css": {
-        ".nm-cv": "top:10px; z-index:6; left:1346px;",
+        ".nm-cv": "top:10px; z-index:1; left:0px;",
         ".nm-cv-viewport": "height:500px; width:300px;"
-      },
-      "monitor": {}
-    },
-    {
-      "id": "c5",
-      "viewClass": "core.Inspector",
-      "viewOptions": {
-        "title": "Object Inspector",
-        "background": true
-      },
-      "css": {
-        ".nm-cv": "top:10px; z-index:7; left:332px;",
-        ".nm-cv-viewport": "height:400px; width:350px;"
-      },
-      "monitor": {
-        "probeClass": "Inspect",
-        "initParams": {
-          "key": "window",
-          "depth": 1
-        }
-      }
-    },
-    {
-      "id": "c6",
-      "viewClass": "core.Probe",
-      "viewOptions": {
-        "title": "Probe Viewer",
-        "background": true
-      },
-      "css": {
-        ".nm-cv": "top:10px; z-index:8; left:0px;",
-        ".nm-cv-viewport": "height:620px; width:400px;"
       },
       "monitor": {
         "probeClass": "Config",
-        "hostName": "Derrick.local",
-        "appName": "config-monitor",
         "appInstance": "1"
       }
     }
