@@ -4,15 +4,13 @@
 }
 
 .nm-app-config-configs {
-    margin-left:10px;
     font-size: 14px;
+    margin: 10px 0 15px 10px;
 }
 
 .nm-app-config-heading {
     background: #444444;
-    padding: 5px;
-}
-
-.nm-app-config-configs {
-    margin: 10px 0 15px 10px;
+    padding: 5px 0 5px 20px;
+    margin-left: -10px;
+    cursor: default;
 }
