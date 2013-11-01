@@ -1,10 +1,9 @@
-0.1.1 / 10-21-2012
+0.1.1 / 10-23-2013
 ==================
 
-  * Separate basic view from view with sources
-  * A better README.md
+  * Exposed newTray as a probe control
 
-0.1.0 / 10-20-2012
+0.1.0 / 10-20-2013
 ==================
 
   * Initial checkin
