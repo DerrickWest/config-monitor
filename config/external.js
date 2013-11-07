@@ -3,7 +3,7 @@
 module.exports = {
 
   // Overrides for the monitor-min package
-  MonitorMin: {
+  Monitor: {
 
     // This setting allows incoming monitor connections from remote systems.
     // It should be used only after assuring the network security policies
@@ -12,7 +12,7 @@ module.exports = {
   },
 
   // Overrides for the node-monitor application
-  Monitor: {
+  Dashboard: {
 
     // This setting allows incoming browser connections from remote systems.
     // It should be used only after assuring the network security policies
