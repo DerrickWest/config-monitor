@@ -14,7 +14,10 @@
         ".nm-cv-viewport": "height:600px; width:600px;"
       },
       "monitor": {
-        "probeClass": "Config"
+        "probeClass": "Config",
+        "hostName": "Derrick.local",
+        "appName": "config-monitor",
+        "appInstance": "1"
       }
     }
   ]
