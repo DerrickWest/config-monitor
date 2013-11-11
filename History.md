@@ -1,10 +1,14 @@
-0.1.1 / 10-21-2012
+0.1.2 / 2013-11-06
 ==================
 
-  * Separate basic view from view with sources
-  * A better README.md
+  * Update to monitor 6.0
 
-0.1.0 / 10-20-2012
+0.1.1 / 2013-10-23
+==================
+
+  * Exposed newTray as a probe control
+
+0.1.0 / 2013-10-20
 ==================
 
   * Initial checkin

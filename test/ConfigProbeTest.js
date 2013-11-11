@@ -1,13 +1,13 @@
 // ConfigProbeTest.js (c) 2013 Derrick West and other contributors
 // May be freely distributed under the MIT license.
 // For further details and documentation:
-// http://derrickwest.github.com/config-monitor-min
+// http://derrickwest.github.com/config-monitor
 (function(root){
 
   // Dependencies
-  var Monitor = require('monitor-min'),
+  var Monitor = require('monitor'),
+      configMonitor = require('../lib/index'),
       CONFIG = require('config'),
-      ConfigProbe = Monitor.ConfigProbe,
       Backbone = Monitor.Backbone, _ = Monitor._;
 
   /**
@@ -32,28 +32,18 @@
   module.exports['Config'] = {
 
     /**
-    * Tests that classes are in correct
-    * @method Config-Classes
-    */
-    Classes: function(test) {
-      test.ok(ConfigProbe.prototype instanceof Backbone.Model, 'The data model is in place');
-      test.ok(ConfigProbe.prototype instanceof Monitor.Probe, 'It is a probe');
-      test.done();
-    },
-
-    /**
     * Tests the initial config values
     * @method Config-InitialValues
     */
     InitialValues: function(test) {
       var configMonitor = new Monitor({probeClass:'Config'});
       configMonitor.connect(function() {
-        var json = configMonitor.toJSON();
-        test.ok(json.MonitorMin != null, 'Monitor configuration is present');
-        test.equal(json.MonitorMin.appName, 'MonitorMin', 'The appName parameter has the correct value');
-        test.equal(json.MonitorMin.serviceBasePort, 42000, 'The serviceBasePort parameter has the correct value');
-        test.equal(json.MonitorMin.portsToScan, 20, 'The portsToScan parameter has the correct value');
-        test.equal(json.MonitorMin.allowExternalConnections, false, 'The allowExternalConnections parameter has the correct value');
+        var json = configMonitor.toJSON().config;
+        test.ok(json.Monitor != null, 'Monitor configuration is present');
+        test.equal(json.Monitor.appName, 'config-monitor', 'The appName parameter has the correct value');
+        test.equal(json.Monitor.serviceBasePort, 42000, 'The serviceBasePort parameter has the correct value');
+        test.equal(json.Monitor.portsToScan, 20, 'The portsToScan parameter has the correct value');
+        test.equal(json.Monitor.allowExternalConnections, false, 'The allowExternalConnections parameter has the correct value');
         test.done();
       });
     }
