@@ -34,5 +34,5 @@ Then start the dashboard
 
     npm start monitor-dashboard
 
-When adding components into your dashboard, the config-monitor components will be avilable.
+When adding components into your dashboard, the config-monitor components will be available.
 
